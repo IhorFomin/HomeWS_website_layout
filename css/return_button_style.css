@@ -1,0 +1,41 @@
+.contein_button{
+    display: none;
+    /* position: fixed; */
+    position: absolute;
+    width:100px;
+    height:100px;
+    background: #000000;
+    opacity: .4;
+    border-radius: 15px;
+    bottom: 100px;
+    /* left: 1400px; */
+    /* left: 0; */
+    /* right: 0; */
+    left: 92%;
+}
+
+.button {
+    padding-left: 7px;
+    padding-top: 25px;
+}
+
+
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+/* .wrapper .contein_button{
+    right: 0;
+} */
+
+.wrapper_butt{
+    max-width: 1500px;
+    /* height: 100px; */
+    margin: 0 auto;
+    /* background-color: red; */
+    /* right: 0; */
+    z-index: 1000;
+    
+}
