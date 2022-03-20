@@ -1,0 +1,40 @@
+html, body {
+    /* height: 100%; */
+}
+
+body {
+    font-family: 'Roboto-Bold';
+    font-weight: bold;
+    background-color: #D7D7D7;
+    height: 710px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: #D7D7D7;
+    height: 710px;
+}
+
+.site_navigation {
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+}
+
+.navigation_logo {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.navigation_logo a {
+    font-size: 35px;
+    line-height: 70px;
+    color: #373737;
+    /* text-align: center; */
+    /* margin: 0 auto; */
+}
