@@ -1,6 +1,6 @@
-html, body {
-    /* height: 100%; */
-}
+/* html, body {
+    height: 100%;
+} */
 
 body {
     font-family: 'Roboto-Bold';
@@ -109,7 +109,6 @@ a {
 
 .settings_menu li {
     list-style-type: none;
-    
 }
 
 #exit_select:hover a {
