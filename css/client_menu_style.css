@@ -79,11 +79,13 @@ a {
     display: flex;
     line-height: 30px;
     margin-bottom: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     /* justify-content: space-between; */
 }
 
 #choice_item_menu {
-    background: linear-gradient(to right, #F9A826, 5%, #fff);
+    background: linear-gradient(to right, #F9A826, 3%, #fff);
 }
 
 .contain_img_menu {
@@ -93,6 +95,32 @@ a {
     height: 30px;
 }
 
-#fix_center_temperature{
+#fix_center_temperature {
     padding-left: 7px;
 }
+
+.settings_menu {
+    margin-top: 330px;
+}
+
+.settings_menu ul {
+    padding: 0;
+}
+
+.settings_menu li {
+    list-style-type: none;
+    
+}
+
+#exit_select:hover a {
+    color: #F12020;
+}
+
+#exit_select:hover path {
+    stroke: #F12020;
+}
+
+/* #exit_img:hover path, polygon {
+    fill: #F12020;
+    stroke: #F12020;
+} */
