@@ -1,0 +1,45 @@
+.temperature_chart_day_block {
+    width: 920px;
+    height: 420px;
+    background-color: #fff;
+    position: relative;
+    left: 220px;
+    top: -690px;
+    border-radius: 20px;
+}
+
+.temperature_chart_day_block p {
+    color: #4F4B4B;
+    font-size: 22px;
+    margin: 0;
+    position: relative;
+    left: 20px;
+    top: 15px;
+}
+
+#temperature_chart_day {
+    margin-top: 10px;
+    width: 700px; 
+    height: 400px;
+    text-align: center;
+}
+
+.temperature_chart_week_block {
+    width: 920px;
+    height: 200px;
+    background-color: #fff;
+    position: relative;
+    left: 220px;
+    top: -670px;
+    border-radius: 20px;
+}
+
+.temperature_all_date_block {
+        width: 350px;
+        height: 640px;
+        background-color: #fff;
+        position: relative;
+        left: 1160px;
+        top: -1310px;
+        border-radius: 20px;
+}

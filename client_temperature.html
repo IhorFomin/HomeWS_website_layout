@@ -8,11 +8,16 @@
     <link rel="stylesheet" href="css/reset_style.css">
     <link rel="stylesheet" href="css/fonts_style.css">
     <link rel="stylesheet" href="css/client_menu_style.css">
+    <link rel="stylesheet" href="css/user_menu_style.css">
+    <link rel="stylesheet" href="css/contain_temperature_style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="js/day_charts_temperature.js"></script>
     <title>Client Temperature</title>
 </head>
 <body>
 
     <div class="wrapper">
+
         <div class="site_navigation">
             <div class="navigation_logo">
                 <a href="index.html" id="logo">HomeWS</a><br>
@@ -81,7 +86,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="item_menu" id="exit_select">
+                        <div class="item_menu_exit" id="exit_select">
                             <div class="selected_tab"></div>
                             <div class="contain_img_menu">
                                 <!-- <img src="icon/icon_client/log-out.svg" alt=""> -->
@@ -96,11 +101,52 @@
                     </li>
                 </ul>
             </div>
-
         </div>
-    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <div class="user_menu">
+            <label for="pseudoBtn" class="btn">
+            <div class="user_icon">
+                <img src="icon/icon_client/user.svg" alt="">
+            </div>
+            <div class="user_popup_menu">
+                <img src="icon/icon_client/chevron-down.svg" alt="">
+            </div>
+            </label>
+            <input type="checkbox" id="pseudoBtn">
+            <div class="block_user_info">
+                <div class="user_icon_popup">
+                    <img src="icon/icon_client/user_popup.svg" alt="">
+                </div>
+                <div class="user_info_popup">
+                    <p>user_0001</p>
+                    <p id="email_info">user_0001@gmail.com</p>
+                    <div class="contein_exit_button">
+                    <div class="item_menu_exit" id="exit_select">
+                        <div class="contain_img_menu">
+                            <!-- <img src="icon/icon_client/log-out.svg" alt=""> -->
+                            <svg width="28" height="28" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.375 28.875H6.875C6.14565 28.875 5.44618 28.5853 4.93046 28.0695C4.41473 27.5538 4.125 26.8543 4.125 26.125V6.875C4.125 6.14565 4.41473 5.44618 4.93046 4.93046C5.44618 4.41473 6.14565 4.125 6.875 4.125H12.375" stroke="#4F4B4B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 23.375L28.875 16.5L22 9.625" stroke="#4F4B4B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M28.875 16.5H12.375" stroke="#4F4B4B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <a href="#" id="user_exit_popup">Вихід</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="temperature_chart_day_block">
+            <p>Зміни температури повітря</p>
+            <!-- <div id="temperature_chart_day"></div> -->
+        </div>
+
+        <div class="temperature_chart_week_block"></div>
+
+        <div class="temperature_all_date_block"></div>
+
+    </div>
     
 </body>
 </html>

@@ -1,0 +1,93 @@
+.user_menu {
+    width: 80px;
+    height: 40px;
+    background-color: #fff;
+    /* margin-left: 1300px;
+    margin-top: -600px; */
+    position: relative;
+    left: 1430px;
+    top: -700px;
+    border-radius: 30px;
+}
+
+.user_icon {
+    position: relative;
+    top: 4px;
+    left: 4px;
+    width: 27px;
+    height: 27px;
+    border: 3px solid #4F4B4B;
+    border-radius: 25px;
+}
+
+.user_icon img {
+    margin-left: 1px;
+}
+
+.user_popup_menu {
+    margin-left: 40px;
+    margin-top: -22px;
+}
+
+/* ----------------------------------------------------------- */
+.block_user_info,
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ .block_user_info {
+  display: block;
+}
+
+/* Стилизация псевдокнопки */
+.btn {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.block_user_info {
+    width: 280px;
+    height: 280px;
+    background-color: #fff;
+    position: relative;
+    z-index: 9999;
+    right: 200px;
+    border-radius: 30px;
+}
+
+.user_icon_popup {
+    position: relative;
+    top: 20px;
+    /* left: 105px; */
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border: 7px solid #4F4B4B;
+    border-radius: 100px;
+}
+
+.user_icon_popup img {
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+.user_info_popup {
+    color: #4F4B4B;
+    font-size: 28px;
+    text-align: center;
+}
+
+#email_info {
+    position: relative;
+    top: -20px;
+    font-size: 16px;
+}
+
+#user_exit_popup {
+    font-size: 18px;
+}
+
+.contein_exit_button {
+    margin-top: -15px;
+    padding-left: 90px;
+}
