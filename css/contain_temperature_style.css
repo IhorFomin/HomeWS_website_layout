@@ -6,12 +6,14 @@
     left: 220px;
     top: -690px;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 .temperature_chart_day_block p {
     color: #4F4B4B;
     font-size: 22px;
     margin: 0;
+    /* margin-top: -10px; */
     position: relative;
     left: 20px;
     top: 15px;
@@ -19,9 +21,11 @@
 
 #temperature_chart_day {
     margin-top: 10px;
-    width: 700px; 
-    height: 400px;
+    width: 1200px; 
+    height: 450px;
     text-align: center;
+    /* overflow: hidden; */
+    /* display: table-column-group; */
 }
 
 .temperature_chart_week_block {
@@ -34,6 +38,46 @@
     border-radius: 20px;
 }
 
+.temperature_parameter p {
+    color: #4F4B4B;
+    font-size: 22px;
+    margin: 0;
+    padding-bottom: 30px;
+    position: relative;
+    left: 20px;
+    top: 30px
+}
+
+.temperature_parameter_value {
+    position: relative;
+    top: -135px;
+}
+
+.temperature_parameter_value p {
+    color: #4F4B4B;
+    width: 100px;
+    font-size: 22px;
+    margin: 0;
+    padding-bottom: 30px;
+    position: relative;
+    left: 450px;
+    /* top: -135px */
+}
+
+#temperature_chart_week {
+    margin-top: 10px;
+    width: 400px; 
+    height: 200px;
+    /* background-color: aqua; */
+    text-align: center;
+    position: relative;
+    padding-top: 10px;
+    top: -340px;
+    left: 550px;
+    /* overflow: hidden; */
+    /* display: table-column-group; */
+}
+
 .temperature_all_date_block {
         width: 350px;
         height: 640px;
@@ -42,4 +86,51 @@
         left: 1160px;
         top: -1310px;
         border-radius: 20px;
+        /* overflow: hidden; */
+        padding-bottom: 10px;
+        overflow-y: auto;
 }
+
+.header_table_date span {
+    color: #4F4B4B;
+    font-size: 18px;
+    position: relative;
+    left: 10px;
+    top: 15px;
+}
+
+.header_table_date hr {
+    margin-top: 20px;
+    height: 2px;
+    background-color: #4F4B4B;
+    width: 330px;
+    text-align: center;
+}
+
+#indents {
+    margin-left: 150px;
+}
+
+.contain_table_date hr {
+    width: 330px;
+    height: 1px;
+    background-color: #4F4B4B;
+}
+
+.item_table_date {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 15px;
+}
+
+.item_table_date p {
+    margin: 0;
+    color: #4F4B4B;
+    font-size: 18px;
+}
+
+::-webkit-scrollbar {
+    width: 1px; /* ширина нового скроллбара */
+} 
