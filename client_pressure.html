@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="css/fonts_style.css">
     <link rel="stylesheet" href="css/client_menu_style.css">
     <link rel="stylesheet" href="css/user_menu_style.css">
-    <link rel="stylesheet" href="css/contain_temperature_style.css">
+    <link rel="stylesheet" href="css/contain_pressure_style.css">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript" src="js/day_charts_temperature.js"></script>
-    <script type="text/javascript" src="js/week_charts_temperature.js"></script>
+    <script type="text/javascript" src="js/day_charts_pressure.js"></script>
+    <script type="text/javascript" src="js/week_charts_pressure.js"></script>
     <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
 </script>
     <title>Client Temperature</title>
@@ -28,12 +28,12 @@
             <div class="navigation_menu">
                 <ul>
                     <li>
-                        <div class="item_menu" id="choice_item_menu">
-                            <div class="selected_tab" id="choice_selected_block"></div>
+                        <div class="item_menu">
+                            <div class="selected_tab"></div>
                             <div class="contain_img_menu">
-                                <img src="icon/choice_icon/temperatura_icon.svg" alt="" id="fix_center_temperature">
+                                <img src="icon/icon_client/temperatura_icon.svg" alt="" id="fix_center_temperature">
                             </div>
-                            <a href="client_temperature.html" id="choice_selected_link">Температура</a>
+                            <a href="client_temperature.html">Температура</a>
                         </div>
                     </li>
                     <li>
@@ -46,12 +46,12 @@
                         </div>
                     </li>    
                     <li>
-                        <div class="item_menu">
-                            <div class="selected_tab"></div>
+                        <div class="item_menu" id="choice_item_menu">
+                            <div class="selected_tab" id="choice_selected_block"></div>
                             <div class="contain_img_menu">
-                                <img src="icon/icon_client/pressure_icon.svg" alt="">
+                                <img src="icon/choice_icon/pressure_icon.svg" alt="">
                             </div>
-                            <a href="client_pressure.html">Тиск</a>
+                            <a href="client_pressure.html" id="choice_selected_link">Тиск</a>
                         </div>
                     </li>
                     <li>
@@ -140,26 +140,26 @@
             </div>
         </div>
 
-        <div class="temperature_chart_day_block">
-            <p>Зміни температури повітря</p><br>
-            <div id="temperature_chart_day" class="temperature_chart_day"></div>
+        <div class="pressure_chart_day_block">
+            <p>Зміни тиску повітря</p><br>
+            <div id="pressure_chart_day" class="pressure_chart_day"></div>
         </div>
 
-        <div class="temperature_chart_week_block">
-            <div class="temperature_parameter">
-                <p>Середня температура повітря:</p>
-                <p>Мінімальна тепература повітря:</p>
-                <p>Максимальна тепература повітря:</p>
+        <div class="pressure_chart_week_block">
+            <div class="pressure_parameter">
+                <p>Середній тиск повітря:</p>
+                <p>Мінімальний тиск повітря:</p>
+                <p>Максимальний тиск повітря:</p>
             </div> 
-            <div class="temperature_parameter_value">
-                <p>24,7°C</p>
-                <p>21,2°C</p>
-                <p>28,1°C</p>
+            <div class="pressure_parameter_value">
+                <p>1 атм.</p>
+                <p>0,9 атм.</p>
+                <p>1,1 атм.</p>
             </div>
-            <div id="temperature_chart_week"></div>
+            <div id="pressure_chart_week"></div>
         </div>
 
-        <div class="temperature_all_date_block">
+        <div class="pressure_all_date_block">
             <div class="header_table_date">
                 <span>Дата / Час</span>
                 <span id="indents">Значення</span>
@@ -169,80 +169,90 @@
 
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>24,7°C</p>
-                </div>
-                <hr>
-
-                <div class="item_table_date">
-                    <p>09.01 / 15:00</p>
-                    <p>24,7°C</p>
+                    <p>1,1 атм.</p>
                 </div>
                 <hr>
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>24,7°C</p>
+                    <p>1,1 атм.</p>
                 </div>
                 <hr>
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>24,7°C</p>
+                    <p>1,1 атм.</p>
                 </div>
                 <hr>
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>24,7°C</p>
+                    <p>1,1 атм.</p>
                 </div>
                 <hr>
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>24,7°C</p>
+                    <p>1,1 атм.</p>
                 </div>
                 <hr>
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>24,7°C</p>
+                    <p>1,1 атм.</p>
                 </div>
                 <hr>
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>24,7°C</p>
+                    <p>1,1 атм.</p>
                 </div>
                 <hr>
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>24,7°C</p>
+                    <p>1,1 атм.</p>
                 </div>
                 <hr>
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>24,7°C</p>
+                    <p>1,1 атм.</p>
                 </div>
                 <hr>
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>24,7°C</p>
+                    <p>1,1 атм.</p>
                 </div>
                 <hr>
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>24,7°C</p>
+                    <p>1,1 атм.</p>
                 </div>
                 <hr>
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>24,7°C</p>
+                    <p>1,1 атм.</p>
                 </div>
                 <hr>
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>24,7°C</p>
+                    <p>1,1 атм.</p>
                 </div>
                 <hr>
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>24,7°C</p>
+                    <p>1,1 атм.</p>
                 </div>
                 <hr>
+                <div class="item_table_date">
+                    <p>09.01 / 15:00</p>
+                    <p>1,1 атм.</p>
+                </div>
+                <hr>
+                <div class="item_table_date">
+                    <p>09.01 / 15:00</p>
+                    <p>1,1 атм.</p>
+                </div>
+                <hr>
+                <div class="item_table_date">
+                    <p>09.01 / 15:00</p>
+                    <p>1,1 атм.</p>
+                </div>
+                <hr>
+ 
             </div>
         </div>
 
