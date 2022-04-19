@@ -9,13 +9,16 @@
     <link rel="stylesheet" href="css/fonts_style.css">
     <link rel="stylesheet" href="css/client_menu_style.css">
     <link rel="stylesheet" href="css/user_menu_style.css">
-    <link rel="stylesheet" href="css/contain_pressure_style.css">
+    <link rel="stylesheet" href="css/contain_humidity_style.css">
+    <link rel="stylesheet" href="css/popup_style.css">
+    <link rel="stylesheet" href="css/client_weather_style.css">
+    <link rel="stylesheet" href="css/form_addcity_style.css">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript" src="js/day_charts_pressure.js"></script>
-    <script type="text/javascript" src="js/week_charts_pressure.js"></script>
-    <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="js/day_charts_humidity.js"></script>
+    <script type="text/javascript" src="js/week_charts_humidity.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script> -->
 </script>
-    <title>Client Pressure</title>
+    <title>Client Weather</title>
 </head>
 <body>
 
@@ -46,21 +49,21 @@
                         </div>
                     </li>    
                     <li>
-                        <div class="item_menu" id="choice_item_menu">
-                            <div class="selected_tab" id="choice_selected_block"></div>
-                            <div class="contain_img_menu">
-                                <img src="icon/choice_icon/pressure_icon.svg" alt="">
-                            </div>
-                            <a href="client_pressure.html" id="choice_selected_link">Тиск</a>
-                        </div>
-                    </li>
-                    <li>
                         <div class="item_menu">
                             <div class="selected_tab"></div>
                             <div class="contain_img_menu">
-                                <img src="icon/icon_client/weather_icon.svg" alt="">
+                                <img src="icon/icon_client/pressure_icon.svg" alt="">
                             </div>
-                            <a href="client_weather.html">Погода</a>
+                            <a href="client_pressure.html">Тиск</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item_menu" id="choice_item_menu">
+                            <div class="selected_tab" id="choice_selected_block"></div>
+                            <div class="contain_img_menu">
+                                <img src="icon/choice_icon/weather_icon.svg" alt="">
+                            </div>
+                            <a href="client_weather.html" id="choice_selected_link">Погода</a>
                         </div>
                     </li>
                     <li>
@@ -69,6 +72,7 @@
                             <div class="contain_img_menu">
                                 <img src="icon/icon_client/device_icon.svg" alt="">
                             </div>
+                            
                             <a href="#">Пристрої</a>
                         </div>
                     </li>
@@ -138,26 +142,37 @@
             </div>
         </div>
 
-        <div class="pressure_chart_day_block">
-            <p>Зміни тиску повітря</p><br>
-            <div id="pressure_chart_day" class="pressure_chart_day"></div>
+        <div class="search_block">
+            <img src="icon/icon_client/search.svg" alt="">
+            <form>
+                <input type="search" name="search_object" placeholder="Введіть місто....." class="search_field">
+            </form>
         </div>
 
-        <div class="pressure_chart_week_block">
-            <div class="pressure_parameter">
-                <p>Середній тиск повітря:</p>
-                <p>Мінімальний тиск повітря:</p>
-                <p>Максимальний тиск повітря:</p>
+        <div class="button_add_city">
+            <a href="#popup" class="fill-div popup_link">Додати</a>
+        </div>
+
+        <!-- <div class="humidity_chart_day_block">
+            <p>Зміни вологості повітря</p><br>
+            <div id="humidity_chart_day" class="humidity_chart_day"></div>
+        </div> -->
+
+        <!-- <div class="humidity_chart_week_block">
+            <div class="humidity_parameter">
+                <p>Середня вологість повітря:</p>
+                <p>Мінімальна вологість повітря:</p>
+                <p>Максимальна вологість повітря:</p>
             </div> 
-            <div class="pressure_parameter_value">
-                <p>1 атм.</p>
-                <p>0,9 атм.</p>
-                <p>1,1 атм.</p>
+            <div class="humidity_parameter_value">
+                <p>63,7%</p>
+                <p>50,2%</p>
+                <p>71,3%</p>
             </div>
-            <div id="pressure_chart_week"></div>
-        </div>
+            <div id="humidity_chart_week"></div>
+        </div> -->
 
-        <div class="pressure_all_date_block">
+        <!-- <div class="humidity_all_date_block">
             <div class="header_table_date">
                 <span>Дата / Час</span>
                 <span id="indents">Значення</span>
@@ -167,94 +182,118 @@
 
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>1,1 атм.</p>
+                    <p>63,3%</p>
                 </div>
                 <hr>
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>1,1 атм.</p>
+                    <p>63,3%</p>
                 </div>
                 <hr>
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>1,1 атм.</p>
+                    <p>63,3%</p>
                 </div>
                 <hr>
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>1,1 атм.</p>
+                    <p>63,3%</p>
                 </div>
                 <hr>
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>1,1 атм.</p>
+                    <p>63,3%</p>
                 </div>
                 <hr>
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>1,1 атм.</p>
+                    <p>63,3%</p>
                 </div>
                 <hr>
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>1,1 атм.</p>
+                    <p>63,3%</p>
                 </div>
                 <hr>
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>1,1 атм.</p>
+                    <p>63,3%</p>
                 </div>
                 <hr>
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>1,1 атм.</p>
+                    <p>63,3%</p>
                 </div>
                 <hr>
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>1,1 атм.</p>
+                    <p>63,3%</p>
                 </div>
                 <hr>
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>1,1 атм.</p>
+                    <p>63,3%</p>
                 </div>
                 <hr>
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>1,1 атм.</p>
+                    <p>63,3%</p>
                 </div>
                 <hr>
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>1,1 атм.</p>
+                    <p>63,3%</p>
                 </div>
                 <hr>
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>1,1 атм.</p>
+                    <p>63,3%</p>
                 </div>
                 <hr>
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>1,1 атм.</p>
+                    <p>63,3%</p>
                 </div>
                 <hr>
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>1,1 атм.</p>
+                    <p>63,3%</p>
                 </div>
                 <hr>
                 <div class="item_table_date">
                     <p>09.01 / 15:00</p>
-                    <p>1,1 атм.</p>
+                    <p>63,3%</p>
                 </div>
                 <hr>
  
             </div>
+        </div> -->
+        
+        <div id="popup" class="popup">
+            <!-- <a href="#header" class="popup_area"></a> -->
+            <div class="popup_body">
+                <div class="popup_content">
+                    <a href="#header" class="popup_close close_popup">X</a>
+                    <div class="popup_title">
+                        Додати місто 
+                    </div>
+                    <div class="popup_text">
+                        <p>Дізнайтесь прогноз погоди у вашому місті</p>
+                        <form>
+                            <input type="text" name="Введіть назву міста" placeholder="Введіть назву міста" class="addcity_form"><br><br>
+                            <!-- <input type="text" name="Пароль" placeholder="Пароль" class="login_in_form"><br><br> -->
+                            <button type="submit" class="btn_addcity">Додати</button>
+                        </form>
+                    </div>
+                </div>  
+            </div>
         </div>
 
     </div>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="js/display_back_button.js"></script>
+    <script src="js/poput_script.js"></script>
     
 </body>
 </html>

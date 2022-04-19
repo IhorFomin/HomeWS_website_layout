@@ -1,0 +1,48 @@
+.addcity_form {
+    padding: 10px;
+    border: none;
+    box-shadow: 0 3px 0 #F9A826;
+    width: 80%;
+    font-size: 24px;
+    outline: 0;
+    color: #373737;
+}
+
+.addcity_form input {
+    margin-top: 30px;
+}
+
+.btn_addcity {
+	display: inline-block;	
+	box-sizing: border-box;
+	padding: 0 25px;
+	/* margin: 0 15px 15px 0; */
+    margin-top: 30px;
+	outline: none;
+	border: 1px solid #fff;
+	border-radius: 50px;
+	height: 46px;
+    width: 200px;
+	font-size: 20px;
+	text-decoration: none;
+	color: #fff;
+	background-color: #F9A826;
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;  
+	vertical-align: top;
+	transition: box-shadow 0.2s;
+}
+.btn_addcity:focus-visible {
+	border: 1px solid #f89901;
+	outline: none;
+}
+
+.btn_addcity:active {
+	background-color: #f89901;
+}
+
+.btn_addcity:hover {
+	background-color: #f89901;
+}
