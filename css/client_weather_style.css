@@ -49,11 +49,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     text-align: center;
     background: #F9A826;
     border-radius: 90px;
-    margin: 0 auto;
-    display: flex;
+    margin: 0;
+    /* display: flex; */
     position: relative;
     top: -720px;
-    left: 640px;
+    left: 1310px;
 }
 
 a.fill-div {
@@ -65,3 +65,140 @@ a.fill-div {
     font-size: 20px;
 }
 
+.weather_all_date_block {
+    width: 1310px;
+    height: 550px;
+    position: relative;
+    left: 220px;
+    top: -690px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.weather_item_block {
+    width: 1280px;
+    height: 130px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.icon_weather {
+    position: relative;
+    left: 30px;
+    top: 5px;
+}
+
+.city_name {
+    position: relative;
+    width: 100px;
+    left: 180px;
+    top: -80px;
+}
+
+.city_name p {
+    color: #4F4B4B;
+    /* width: 100px; */
+    font-size: 22px;
+    margin: 0;
+    width: 100px;
+}
+
+.weather_name {
+    position: relative;
+    width: 100px;
+    left: 180px;
+    top: -80px;
+}
+
+.weather_name p {
+    color: #4F4B4B;
+    font-size: 18px;
+    margin: 0;
+    width: 100px;
+}
+
+.colm_1_paraemters {
+    position: relative;
+    width: 100px;
+    left: 280px;
+    top: -150px;
+    color: #4F4B4B;
+    font-size: 18px;
+    margin: 0;
+}
+
+.colm_1_paraemters_value {
+    position: relative;
+    width: 100px;
+    left: 420px;
+    top: -226px;
+    color: #4F4B4B;
+    font-size: 18px;
+    margin: 0;
+}
+
+.colm_2_paraemters {
+    position: relative;
+    width: 150px;
+    left: 500px;
+    top: -305px;
+    color: #4F4B4B;
+    font-size: 18px;
+    margin: 0;
+}
+
+.colm_2_paraemters_value {
+    position: relative;
+    width: 100px;
+    left: 670px;
+    top: -382px;
+    color: #4F4B4B;
+    font-size: 18px;
+    margin: 0;
+}
+
+.colm_3_paraemters {
+    position: relative;
+    width: 150px;
+    left: 760px;
+    top: -460px;
+    color: #4F4B4B;
+    font-size: 18px;
+    margin: 0;
+}
+
+.colm_3_paraemters_value {
+    position: relative;
+    width: 100px;
+    left: 920px;
+    top: -498px;
+    color: #4F4B4B;
+    font-size: 18px;
+    margin: 0;
+}
+
+#delete_city_select:hover a {
+    color: #F12020;
+}
+
+#delete_city_select:hover path {
+    /* stroke: #F12020; */
+    fill: #F12020;
+}
+
+.delete_city {
+    position: relative;
+    width: 80px;
+    top: -530px;
+    left: 1200px;
+    margin: 0;
+}
+
+.contain_img_delete_city {
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 1px; /* ширина нового скроллбара */
+}
