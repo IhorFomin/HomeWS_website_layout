@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon/icon_site.png" type="image/png">
+    <link rel="stylesheet" href="css/reset_style.css">
+    <link rel="stylesheet" href="css/fonts_style.css">
+    <link rel="stylesheet" href="css/client_menu_style.css">
+    <link rel="stylesheet" href="css/user_menu_style.css">
+    <!-- <link rel="stylesheet" href="css/contain_humidity_style.css"> -->
+    <link rel="stylesheet" href="css/popup_style.css">
+    <link rel="stylesheet" href="css/client_device_style.css">
+    <link rel="stylesheet" href="css/form_add_device_style.css">
+    <!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
+    <!-- <script type="text/javascript" src="js/day_charts_humidity.js"></script> -->
+    <!-- <script type="text/javascript" src="js/week_charts_humidity.js"></script> -->
+    <!-- <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script> -->
+</script>
+    <title>Client Device</title>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div class="site_navigation">
+            <div class="navigation_logo">
+                <a href="index.html" id="logo">HomeWS</a><br>
+            </div>
+            <div class="navigation_menu">
+                <ul>
+                    <li>
+                        <div class="item_menu">
+                            <div class="selected_tab"></div>
+                            <div class="contain_img_menu">
+                                <img src="icon/icon_client/temperatura_icon.svg" alt="" id="fix_center_temperature">
+                            </div>
+                            <a href="client_temperature.html">Температура</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item_menu">
+                            <div class="selected_tab"></div>
+                            <div class="contain_img_menu">
+                                <img src="icon/icon_client/humidity_icon.svg" alt="">
+                            </div>
+                            <a href="client_humidity.html">Вологість</a>
+                        </div>
+                    </li>    
+                    <li>
+                        <div class="item_menu">
+                            <div class="selected_tab"></div>
+                            <div class="contain_img_menu">
+                                <img src="icon/icon_client/pressure_icon.svg" alt="">
+                            </div>
+                            <a href="client_pressure.html">Тиск</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item_menu">
+                            <div class="selected_tab"></div>
+                            <div class="contain_img_menu">
+                                <img src="icon/icon_client/weather_icon.svg" alt="">
+                            </div>
+                            <a href="client_weather.html">Погода</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item_menu" id="choice_item_menu">
+                            <div class="selected_tab" id="choice_selected_block"></div>
+                            <div class="contain_img_menu">
+                                <img src="icon/choice_icon/device_icon.svg" alt="">
+                            </div>
+                            <a href="client_device.html" id="choice_selected_link">Пристрої</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="settings_menu">
+                <ul>
+                    <li>
+                        <div class="item_menu">
+                            <div class="selected_tab"></div>
+                            <div class="contain_img_menu">
+                                <img src="icon/icon_client/settings.svg" alt="">
+                            </div>
+                            <a href="#">Налаштування</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item_menu_exit" id="exit_select">
+                            <div class="selected_tab"></div>
+                            <div class="contain_img_menu">
+                                <!-- <img src="icon/icon_client/log-out.svg" alt=""> -->
+                                <svg width="28" height="28" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.375 28.875H6.875C6.14565 28.875 5.44618 28.5853 4.93046 28.0695C4.41473 27.5538 4.125 26.8543 4.125 26.125V6.875C4.125 6.14565 4.41473 5.44618 4.93046 4.93046C5.44618 4.41473 6.14565 4.125 6.875 4.125H12.375" stroke="#4F4B4B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M22 23.375L28.875 16.5L22 9.625" stroke="#4F4B4B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M28.875 16.5H12.375" stroke="#4F4B4B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <a href="#">Вихід</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="user_menu">
+            <label for="pseudoBtn" class="btn">
+            <div class="user_icon">
+                <img src="icon/icon_client/user.svg" alt="">
+            </div>
+            <div class="user_popup_menu">
+                <img src="icon/icon_client/chevron-down.svg" alt="">
+            </div>
+            </label>
+            <input type="checkbox" id="pseudoBtn">
+            <div class="block_user_info">
+                <div class="user_icon_popup">
+                    <img src="icon/icon_client/user_popup.svg" alt="">
+                </div>
+                <div class="user_info_popup">
+                    <p>user_0001</p>
+                    <p id="email_info">user_0001@gmail.com</p>
+                    <div class="contein_exit_button">
+                    <div class="item_menu_exit" id="exit_select">
+                        <div class="contain_img_menu">
+                            <!-- <img src="icon/icon_client/log-out.svg" alt=""> -->
+                            <svg width="28" height="28" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.375 28.875H6.875C6.14565 28.875 5.44618 28.5853 4.93046 28.0695C4.41473 27.5538 4.125 26.8543 4.125 26.125V6.875C4.125 6.14565 4.41473 5.44618 4.93046 4.93046C5.44618 4.41473 6.14565 4.125 6.875 4.125H12.375" stroke="#4F4B4B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 23.375L28.875 16.5L22 9.625" stroke="#4F4B4B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M28.875 16.5H12.375" stroke="#4F4B4B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <a href="#" id="user_exit_popup">Вихід</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="search_block">
+            <img src="icon/icon_client/search.svg" alt="">
+            <form>
+                <input type="search" name="search_object" placeholder="Введіть ID пристрою....." class="search_field">
+            </form>
+        </div>
+
+        <div class="button_add_device">
+            <a href="#popup" class="fill-div popup_link">Додати</a>
+        </div>
+
+        <div class="device_all_date_block">
+            <div class="device_item_block">
+            <div class="icon_device">
+                <img src="icon/icon_device/weather_station.svg" alt="">
+            </div> 
+            <div class="device_name">
+                <p>Метеостанція HomeWS</p>
+            </div>
+            <div class="colm_1_paraemters">
+                <p>ID пристрою</p>
+                <p>Тип</p>
+            </div>
+            <div class="colm_1_paraemters_value">
+                <p>5FEC01</p>
+                <p>Метеостанція</p>
+            </div>
+            <div class="colm_2_paraemters">
+                <p>Статус підключення</p>
+                <p>Заряд батареї</p>
+            </div>
+            <div class="colm_2_paraemters_value">
+                <p id="connect">Підключено</p>
+                <p>96%</p>
+            </div>
+            <div class="delete_city" id="delete_city_select"> 
+                <div class="contain_img_delete_city">
+                    <a href="">
+                    <svg width="42" height="42" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M51.8 74H21.83C15.725 74 10.915 69.005 10.915 63.085V29.6C10.915 28.49 11.655 27.75 12.765 27.75C13.875 27.75 14.615 28.49 14.615 29.6V63.085C14.615 67.155 17.945 70.3 21.83 70.3H51.8C55.87 70.3 59.015 66.97 59.015 63.085V29.6C59.015 28.49 59.755 27.75 60.865 27.75C61.975 27.75 62.715 28.49 62.715 29.6V63.085C62.715 69.005 57.72 74 51.8 74Z" fill="#4F4B4B" stroke-width="2"/>
+                        <path d="M61.605 9.065H47.545C46.62 3.885 42.18 0 36.815 0C31.45 0 27.01 3.885 26.085 9.065H12.025C7.77 9.065 4.44 12.395 4.44 16.65C4.44 20.905 7.77 24.05 12.025 24.05H61.79C66.045 24.05 69.375 20.72 69.375 16.465C69.375 12.21 65.86 9.065 61.605 9.065ZM36.815 3.7C40.145 3.7 42.92 5.92 43.66 9.065H29.785C30.71 5.92 33.485 3.7 36.815 3.7ZM61.605 20.35H12.025C9.99 20.35 8.14 18.685 8.14 16.465C8.14 14.43 9.805 12.58 12.025 12.58H61.79C63.825 12.58 65.675 14.245 65.675 16.465C65.49 18.685 63.825 20.35 61.605 20.35Z" fill="#4F4B4B" stroke-width="2"/>
+                        <path d="M23.865 64.935C22.755 64.935 22.015 64.195 22.015 63.085V32.19C22.015 31.08 22.755 30.34 23.865 30.34C24.975 30.34 25.715 31.08 25.715 32.19V63.085C25.715 64.01 24.79 64.935 23.865 64.935Z" fill="#4F4B4B" stroke-width="2"/>
+                        <path d="M49.765 64.935C48.655 64.935 47.915 64.195 47.915 63.085V32.19C47.915 31.08 48.655 30.34 49.765 30.34C50.875 30.34 51.615 31.08 51.615 32.19V63.085C51.615 64.01 50.69 64.935 49.765 64.935Z" fill="#4F4B4B" stroke-width="2"/>
+                        <path d="M36.815 64.935C35.705 64.935 34.965 64.195 34.965 63.085V32.19C34.965 31.08 35.705 30.34 36.815 30.34C37.925 30.34 38.665 31.08 38.665 32.19V63.085C38.665 64.01 37.74 64.935 36.815 64.935Z" fill="#4F4B4B" stroke-width="2"/>
+                    </svg>
+                    </a>
+                </div>  
+            </div>
+            </div>
+            <div class="device_item_block">
+                <div class="icon_device">
+                    <img src="icon/icon_device/temperature_sensor.svg" alt="">
+                </div> 
+                <div class="device_name">
+                    <p>Датчик температури HomeWS</p>
+                </div>
+                <div class="colm_1_paraemters">
+                    <p>ID пристрою</p>
+                    <p>Тип</p>
+                </div>
+                <div class="colm_1_paraemters_value">
+                    <p>585C01</p>
+                    <p>Датчик</p>
+                </div>
+                <div class="colm_2_paraemters">
+                    <p>Статус підключення</p>
+                    <p>Заряд батареї</p>
+                </div>
+                <div class="colm_2_paraemters_value">
+                    <p id="disconnect">Не підключено</p>
+                    <p>0%</p>
+                </div>
+                <div class="delete_city" id="delete_city_select"> 
+                    <div class="contain_img_delete_city">
+                        <a href="">
+                        <svg width="42" height="42" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M51.8 74H21.83C15.725 74 10.915 69.005 10.915 63.085V29.6C10.915 28.49 11.655 27.75 12.765 27.75C13.875 27.75 14.615 28.49 14.615 29.6V63.085C14.615 67.155 17.945 70.3 21.83 70.3H51.8C55.87 70.3 59.015 66.97 59.015 63.085V29.6C59.015 28.49 59.755 27.75 60.865 27.75C61.975 27.75 62.715 28.49 62.715 29.6V63.085C62.715 69.005 57.72 74 51.8 74Z" fill="#4F4B4B" stroke-width="2"/>
+                            <path d="M61.605 9.065H47.545C46.62 3.885 42.18 0 36.815 0C31.45 0 27.01 3.885 26.085 9.065H12.025C7.77 9.065 4.44 12.395 4.44 16.65C4.44 20.905 7.77 24.05 12.025 24.05H61.79C66.045 24.05 69.375 20.72 69.375 16.465C69.375 12.21 65.86 9.065 61.605 9.065ZM36.815 3.7C40.145 3.7 42.92 5.92 43.66 9.065H29.785C30.71 5.92 33.485 3.7 36.815 3.7ZM61.605 20.35H12.025C9.99 20.35 8.14 18.685 8.14 16.465C8.14 14.43 9.805 12.58 12.025 12.58H61.79C63.825 12.58 65.675 14.245 65.675 16.465C65.49 18.685 63.825 20.35 61.605 20.35Z" fill="#4F4B4B" stroke-width="2"/>
+                            <path d="M23.865 64.935C22.755 64.935 22.015 64.195 22.015 63.085V32.19C22.015 31.08 22.755 30.34 23.865 30.34C24.975 30.34 25.715 31.08 25.715 32.19V63.085C25.715 64.01 24.79 64.935 23.865 64.935Z" fill="#4F4B4B" stroke-width="2"/>
+                            <path d="M49.765 64.935C48.655 64.935 47.915 64.195 47.915 63.085V32.19C47.915 31.08 48.655 30.34 49.765 30.34C50.875 30.34 51.615 31.08 51.615 32.19V63.085C51.615 64.01 50.69 64.935 49.765 64.935Z" fill="#4F4B4B" stroke-width="2"/>
+                            <path d="M36.815 64.935C35.705 64.935 34.965 64.195 34.965 63.085V32.19C34.965 31.08 35.705 30.34 36.815 30.34C37.925 30.34 38.665 31.08 38.665 32.19V63.085C38.665 64.01 37.74 64.935 36.815 64.935Z" fill="#4F4B4B" stroke-width="2"/>
+                        </svg>
+                        </a>
+                    </div>  
+                </div>
+                </div>
+        </div>
+        
+        <div id="popup" class="popup">
+            <!-- <a href="#header" class="popup_area"></a> -->
+            <div class="popup_body">
+                <div class="popup_content">
+                    <a href="#header" class="popup_close close_popup">X</a>
+                    <div class="popup_title">
+                        Додати пристрій 
+                    </div>
+                    <div class="popup_text">
+                        <p>Додайте пристрій за допомогою персонального ID</p>
+                        <form>
+                            <input type="text" name="Введіть ID пристрою" placeholder="Введіть ID пристрою" class="add_device_form"><br><br>
+                            <!-- <input type="text" name="Пароль" placeholder="Пароль" class="login_in_form"><br><br> -->
+                            <button type="submit" class="btn_add_device">Додати</button>
+                        </form>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="js/display_back_button.js"></script>
+    <script src="js/poput_script.js"></script>
+    
+</body>
+</html>
